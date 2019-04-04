@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeSuite;
 
 public class TestParent {
 
-    protected WebDriver driver;
+    private WebDriver driver;
     private WebDriverWait wait;
 
     public TestParent(){
@@ -23,7 +23,7 @@ public class TestParent {
         driver.quit();
     }
 
-    public WebDriver getDriver() {
+    public WebDriver getDriver(){
         return this.driver;
     }
 }

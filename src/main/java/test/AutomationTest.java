@@ -16,7 +16,7 @@ public class AutomationTest extends TestParent{
         mainPage.searchField().click();
         mainPage.searchField().sendKeys("Test Automation");
         mainPage.searchButton().click();
-        assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/wiki/Test_automation");
+        assertEquals(getDriver().getCurrentUrl(), "https://en.wikipedia.org/wiki/Test_automation");
         sleep(5000);
     }
 }
