@@ -14,6 +14,7 @@ public class TestParent {
     public TestParent(){
         System.setProperty("webdriver.chrome.driver", "C:\\_dev\\chromedriver.exe");
         this.driver = new ChromeDriver();
+        driver.manage().window().maximize();
         wait = new WebDriverWait(this.driver, 25, 100);
     }
 
